@@ -1,11 +1,14 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>tgest ting l;kasjd lkajs d</p>
-    </div>
+    <BrowserRouter>      
+      <Routes>
+        <Route path="/" exact={true} element={<Home/>}/>        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
